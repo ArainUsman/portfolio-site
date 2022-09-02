@@ -1,0 +1,82 @@
+.services {
+    display: flex;
+    padding: 0 3rem;
+    height: 90vh;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+}
+
+
+.ser-left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ser-left>:nth-child(1) {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.ser-left>:nth-child(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.ser-left>:nth-child(3) {
+    color: var(--gray);
+    font-size: 16px;
+}
+
+.ser-btn {
+    width: 8rem;
+    height: 2rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    padding-top: 8px;
+}
+
+.ser-right {
+    position: relative;
+}
+
+.ser-right>* {
+    position: absolute;
+}
+
+.ser-blur1 {
+    top: 11rem;
+    left: -14rem;
+}
+
+.ser-blur2 {
+    top: 8rem;
+    left: 14rem;
+}
+
+.design-card {
+    gap: 0rem;
+}
+
+@media screen and (max-width:480px) {
+    .services {
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
+    }
+
+    .ser-right {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 17rem;
+    }
+
+    .ser-right>* {
+        position: static;
+    }
+}
